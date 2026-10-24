@@ -2,6 +2,11 @@
 
 一群人一起吃麦当劳时，最低总价不一定是大家都接受的答案。这个作品把每个人的需求写成一张**匿名需求卡**，用真实门店菜单生成可比较的方案，展示**每个人拿到了什么、谁的要求被照顾、谁在将就**；任何一个人说「这份我不接受」，就现场重谈一次，再用官方价格核对回答「多 10 元能换来什么」。
 
+
+## 演示视频（可直接播放）
+
+https://github.com/user-attachments/assets/494a1bcc-d341-45fa-a1b5-d3d0736328a7
+
 - **演示视频（2 分 28 秒，真实 MCP 调用）**：[maimen-huican-demo.mp4](docs/videos/maimen-huican-demo.mp4) · [参数与 SHA256](docs/videos/README.md)
 - **界面**：0.5.0 起为明亮的红黄主题（红 `#DA291C`、金黄 `#FFC72C`、暖白 `#FFF9ED`）。这只是借用“红黄、有食欲”的观感作为设计起点，**不是**麦当劳官方品牌规范，本作品也不是官方出品。
 - **仓库**：<https://github.com/jasper-julian/maimen-huican>
