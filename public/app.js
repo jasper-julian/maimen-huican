@@ -27,12 +27,15 @@ function peopleFields(){
 }
 function formData(){return{city:$('#city').value.trim(),businessArea:$('#area').value.trim(),people:[...document.querySelectorAll('.person')].map(x=>({wants:x.querySelector('.want').value,avoids:x.querySelector('.avoid').value})),budget:Number($('#budget').value),diningMode:document.querySelector('[name=diningMode]:checked')?.value||'堂食'}}
 
-/* 切换城市、商圈或门店：旧菜单句柄、旧结果、旧否决状态一律作废 */
+/* 结果失效：只清空结果与选择；菜单句柄只在换门店/商圈/城市时作废，避免重复查询并保留本轮的“不接受”记录 */
 function invalidate(reason){
-  state.menuHandle=null;state.cards=null;state.selectedPlan=null;
+  state.cards=null;state.selectedPlan=null;
   $('#results').classList.add('hidden');$('#planGrid').innerHTML='';$('#resultNotes').innerHTML='';
   $('#selectedHint').textContent='未选择方案';$('#exportSelected').disabled=true;
   if(reason)toast(reason);
+}
+function invalidateMenu(reason){
+  invalidate(reason);state.menuHandle=null;
 }
 function setSource(source){
   state.source=source;
@@ -91,7 +94,7 @@ async function queryStores(){
   if(!f.city||!f.businessArea)throw new Error('请先填写城市和商圈。');
   if(!state.connected)throw new Error('未连接官方服务。请打开「连接设置」配置 Token，或主动加载演示数据。');
   const q=await api('/api/query',{city:f.city,businessArea:f.businessArea});
-  invalidate();renderStores(q.stores);
+  invalidateMenu();renderStores(q.stores);
   if(!q.stores.length)throw new Error('该商圈没有查到门店，请换一个公开商圈。');
   toast(`已找到 ${q.stores.length} 家门店，请选择一家`);
   return q.stores;
@@ -102,13 +105,13 @@ async function loadDemo(){
   setBusy(true,'加载演示数据…');
   try{
     const q=await api('/api/demo',{});
-    invalidate();state.menuHandle=q.menuHandle;setSource('demo');
+    invalidateMenu();state.menuHandle=q.menuHandle;setSource('demo');
     $('#store').innerHTML='<option value="demo">示例商圈店 · 演示（虚构）</option>';
     toast('已加载演示数据：餐品与价格均为虚构，不会发起官方查询');
   }catch(e){toast(e.message)}
   finally{setBusy(false)}
 }
-function exitDemo(){invalidate();setSource(null);$('#store').innerHTML='<option value="">先填写城市和商圈并查询</option>';toast('已退出演示模式；查询真实门店需要先连接官方服务')}
+function exitDemo(){invalidateMenu();setSource(null);$('#store').innerHTML='<option value="">先填写城市和商圈并查询</option>';toast('已退出演示模式；查询真实门店需要先连接官方服务')}
 
 async function ensureMenu(){
   if(state.menuHandle)return state.menuHandle;
@@ -243,7 +246,12 @@ async function compareUpgrade(plan,btn,box){
       return;
     }
     const add=(r.added||[]).map(x=>`${esc(x.name)} × ${x.quantity}`).join('、')||'无新增餐品';
-    const who=(r.beneficiaries||[]).map(b=>`${esc(b.person)} 多满足「${esc(b.gained.join('、'))}」`).join('；')||'没有人多满足要求';
+    const who=(r.beneficiaries||[]).map(b=>{
+      const parts=[];
+      if(b.gained?.length)parts.push(`多满足「${esc(b.gained.join('、'))}」`);
+      if(b.added?.length)parts.push(`多拿到 ${b.added.map(x=>`${esc(x.name)} × ${x.quantity}`).join('、')}`);
+      return `${esc(b.person)} ${parts.join('，')}`;
+    }).join('；')||'没有人多拿到餐品';
     box.className='upgrade-box show';
     box.innerHTML=r.changed===false
       ? `<b>多 10 元：方案没有变化</b><p>${esc(r.note)}</p>`
@@ -283,9 +291,9 @@ $('#count').onchange=()=>{peopleFields();invalidate('人数已变化，请重新
 $('#budget').oninput=()=>$('#receiptBudget').textContent=`people / ¥ ${Number($('#budget').value)||0}`;
 $('#budget').onchange=()=>invalidate();
 $('#resetPeople').onclick=()=>{peopleFields();invalidate('已重置口味，请重新生成方案')};
-$('#city').oninput=()=>{if(state.source!=='demo'){invalidate();$('#store').innerHTML='<option value="">先填写城市和商圈并查询</option>';setSource(null);}};
-$('#area').oninput=()=>{if(state.source!=='demo'){invalidate();$('#store').innerHTML='<option value="">先填写城市和商圈并查询</option>';setSource(null);}};
-$('#store').onchange=()=>{if(state.source!=='demo'){invalidate('已切换门店，请重新生成方案');}};
+$('#city').oninput=()=>{if(state.source!=='demo'){invalidateMenu();$('#store').innerHTML='<option value="">先填写城市和商圈并查询</option>';setSource(null);}};
+$('#area').oninput=()=>{if(state.source!=='demo'){invalidateMenu();$('#store').innerHTML='<option value="">先填写城市和商圈并查询</option>';setSource(null);}};
+$('#store').onchange=()=>{if(state.source!=='demo'){invalidateMenu('已切换门店，请重新生成方案');}};
 $('#connectBtn').onclick=connect;
 $('#cfgCheck').onclick=connect;
 $('#configBtn').onclick=()=>$('#configDialog').showModal();

@@ -37,7 +37,8 @@
         }
       ],
       "metCount": 1,
-      "wantCount": 0
+      "missedCount": 0,
+      "wantCount": 1
     },
     {
       "person": "匿名 B",
@@ -52,7 +53,8 @@
         }
       ],
       "metCount": 1,
-      "wantCount": 0
+      "missedCount": 0,
+      "wantCount": 1
     }
   ],
   "menuEstimate": 86.5,
@@ -65,7 +67,7 @@
       "status": "本次官方试算采用的价格来源"
     }
   ],
-  "queriedAt": "2026-10-24T12:33:33.676Z",
-  "priceQueriedAt": "2026-10-24T12:33:35.607Z",
+  "queriedAt": "2026-10-24T15:01:57.719Z",
+  "priceQueriedAt": "2026-10-24T15:01:59.562Z",
   "disclaimer": "仅查询和试算；不代表锁价或下单，不承诺全局最低价。"
 }

@@ -1,0 +1,73 @@
+{
+  "product": "麦门会餐",
+  "source": "麦当劳官方 MCP（查询与价格核对）",
+  "store": "麦当劳上海静安寺餐厅",
+  "peopleCount": 2,
+  "diningMode": "堂食",
+  "strategy": "优先满足口味",
+  "items": [
+    {
+      "name": "板烧鸡腿堡",
+      "quantity": 1
+    },
+    {
+      "name": "麦乐鸡",
+      "quantity": 1
+    },
+    {
+      "name": "双层吉士汉堡",
+      "quantity": 1
+    },
+    {
+      "name": "巨无霸",
+      "quantity": 1
+    }
+  ],
+  "allocations": [
+    {
+      "person": "匿名 A",
+      "items": [
+        {
+          "name": "板烧鸡腿堡",
+          "quantity": 1
+        },
+        {
+          "name": "麦乐鸡",
+          "quantity": 1
+        }
+      ],
+      "metCount": 1,
+      "missedCount": 0,
+      "wantCount": 1
+    },
+    {
+      "person": "匿名 B",
+      "items": [
+        {
+          "name": "双层吉士汉堡",
+          "quantity": 1
+        },
+        {
+          "name": "巨无霸",
+          "quantity": 1
+        }
+      ],
+      "metCount": 1,
+      "missedCount": 0,
+      "wantCount": 1
+    }
+  ],
+  "menuEstimate": 86.5,
+  "priceStatus": "官方实付试算 · 未下单",
+  "verifiedPrice": 86.5,
+  "offers": [
+    {
+      "title": "官方当前售价 / 自动适用优惠",
+      "condition": "该门店、到店自取、当前餐品数量；未主动使用卡券",
+      "status": "本次官方试算采用的价格来源"
+    }
+  ],
+  "queriedAt": "2026-10-24T15:01:57.719Z",
+  "priceQueriedAt": "2026-10-24T15:01:59.562Z",
+  "disclaimer": "仅查询和试算；不代表锁价或下单，不承诺全局最低价。"
+}

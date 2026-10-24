@@ -79,9 +79,18 @@ try {
   const tightBrief = { budget: 55, plans: tight.plans.map(planBrief), conflicts: tight.conflicts.map(c => c.message), upgrade: tightUpgrade };
   console.log(JSON.stringify({ stage: 'tight-budget', budget: 55, prices: tight.plans.map(p => p.verifiedPrice), upgrade: tightUpgrade }));
 
-  // 导出用户最终选择的方案（这里选已核对且预算内的一张）
+  // 导出用户最终选择的方案（这里选已核对且预算内的一张），并核对导出计数与页面逐人一致
   const chosen = afterVeto.plans.find(p => p.priceVerified) || afterVeto.plans[0];
   const card = await post('/api/export', { planHandle: chosen.planHandle });
+  const exportConsistency = card.allocations.map((a, i) => {
+    const s = chosen.peopleAllocations[i].satisfaction;
+    const same = a.metCount === s.metCount && a.missedCount === s.missedCount && a.wantCount === s.wantCount;
+    if (!same || a.metCount + a.missedCount !== a.wantCount || a.metCount > a.wantCount) {
+      throw new Error(`导出统计与页面不一致：第 ${i + 1} 人`);
+    }
+    return { person: a.person, metCount: a.metCount, missedCount: a.missedCount, wantCount: a.wantCount, consistent: same };
+  });
+  console.log(JSON.stringify({ stage: 'export', consistency: exportConsistency, verifiedPrice: card.verifiedPrice }));
 
   const evidence = await (await fetch(base + '/api/evidence', { headers: { cookie } })).json();
 
@@ -98,6 +107,7 @@ try {
     upgrade,
     tightBudget: tightBrief,
     exported: card,
+    exportConsistency,
     notes: first.notes,
     policy: '只读；未下单、未支付、未领券、未兑换、未抽奖',
     events: evidence.events,

@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-24T12:33:37.415Z",
+  "checkedAt": "2026-10-24T15:02:01.014Z",
   "area": "上海 静安寺",
   "store": "麦当劳上海静安寺餐厅",
-  "menuCount": 87,
+  "menuCount": 88,
   "couponCount": 3,
   "people": 2,
   "vetoedItem": "高达吉士双牛堡",
@@ -61,7 +61,7 @@
       "withinBudget": true,
       "discount": 0,
       "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-      "priceQueriedAt": "2026-10-24T12:33:34.913Z",
+      "priceQueriedAt": "2026-10-24T15:01:58.904Z",
       "unmet": [],
       "failure": null
     },
@@ -109,7 +109,7 @@
       "withinBudget": true,
       "discount": 8.1,
       "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-      "priceQueriedAt": "2026-10-24T12:33:35.054Z",
+      "priceQueriedAt": "2026-10-24T15:01:59.044Z",
       "unmet": [
         "匿名 A想吃「鸡肉」未满足（预算或菜单限制）",
         "匿名 B想吃「牛肉」未满足（预算或菜单限制）"
@@ -165,7 +165,7 @@
       "withinBudget": true,
       "discount": 0,
       "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-      "priceQueriedAt": "2026-10-24T12:33:35.193Z",
+      "priceQueriedAt": "2026-10-24T15:01:59.192Z",
       "unmet": [],
       "failure": null
     },
@@ -223,7 +223,7 @@
       "withinBudget": true,
       "discount": 0,
       "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-      "priceQueriedAt": "2026-10-24T12:33:35.362Z",
+      "priceQueriedAt": "2026-10-24T15:01:59.333Z",
       "unmet": [],
       "failure": null
     }
@@ -298,7 +298,7 @@
         "withinBudget": true,
         "discount": 0,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:35.607Z",
+        "priceQueriedAt": "2026-10-24T15:01:59.562Z",
         "unmet": [],
         "failure": null
       },
@@ -346,7 +346,7 @@
         "withinBudget": true,
         "discount": 8.1,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:35.734Z",
+        "priceQueriedAt": "2026-10-24T15:01:59.716Z",
         "unmet": [
           "匿名 A想吃「鸡肉」未满足（预算或菜单限制）",
           "匿名 B想吃「牛肉」未满足（预算或菜单限制）"
@@ -402,7 +402,7 @@
         "withinBudget": true,
         "discount": 0,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:35.884Z",
+        "priceQueriedAt": "2026-10-24T15:01:59.856Z",
         "unmet": [],
         "failure": null
       },
@@ -460,7 +460,7 @@
         "withinBudget": true,
         "discount": 0,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:36.038Z",
+        "priceQueriedAt": "2026-10-24T15:01:59.995Z",
         "unmet": [],
         "failure": null
       }
@@ -476,7 +476,7 @@
     "removed": [],
     "beneficiaries": [],
     "note": "预算提高 ¥10 后，当前候选没有产生新的组合，官方实付仍为 ¥60.50。",
-    "planHandle": "919edb1af8a9eefc8b5864568927056e4e4f",
+    "planHandle": "7892d764c6cd40c783388d1888c2da9edd5e",
     "title": "折中推荐",
     "budget": 130,
     "priceVerified": true,
@@ -543,7 +543,7 @@
         "withinBudget": true,
         "discount": 0,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:36.422Z",
+        "priceQueriedAt": "2026-10-24T15:02:00.349Z",
         "unmet": [],
         "failure": null
       },
@@ -591,7 +591,7 @@
         "withinBudget": true,
         "discount": 8.1,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:36.594Z",
+        "priceQueriedAt": "2026-10-24T15:02:00.512Z",
         "unmet": [
           "匿名 A想吃「鸡肉」未满足（预算或菜单限制）",
           "匿名 B想吃「牛肉」未满足（预算或菜单限制）"
@@ -642,7 +642,7 @@
         "withinBudget": true,
         "discount": 0,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:36.733Z",
+        "priceQueriedAt": "2026-10-24T15:02:00.656Z",
         "unmet": [],
         "failure": null
       },
@@ -690,7 +690,7 @@
         "withinBudget": true,
         "discount": 0,
         "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
-        "priceQueriedAt": "2026-10-24T12:33:36.888Z",
+        "priceQueriedAt": "2026-10-24T15:02:00.865Z",
         "unmet": [],
         "failure": null
       }
@@ -708,9 +708,20 @@
         }
       ],
       "removed": [],
-      "beneficiaries": [],
+      "beneficiaries": [
+        {
+          "person": "匿名 A",
+          "gained": [],
+          "added": [
+            {
+              "name": "麦乐鸡",
+              "quantity": 1
+            }
+          ]
+        }
+      ],
       "note": "多花 ¥14.00 换来上面的变化；仅为当前候选下的比较，不是全局最优。",
-      "planHandle": "bb8c22757f379163170dd3e99570b6f1696c",
+      "planHandle": "5dc459e1379716551427b6a604ac9adf849b",
       "title": "优先满足口味",
       "budget": 65,
       "priceVerified": true,
@@ -770,7 +781,8 @@
           }
         ],
         "metCount": 1,
-        "wantCount": 0
+        "missedCount": 0,
+        "wantCount": 1
       },
       {
         "person": "匿名 B",
@@ -785,7 +797,8 @@
           }
         ],
         "metCount": 1,
-        "wantCount": 0
+        "missedCount": 0,
+        "wantCount": 1
       }
     ],
     "menuEstimate": 86.5,
@@ -798,156 +811,167 @@
         "status": "本次官方试算采用的价格来源"
       }
     ],
-    "queriedAt": "2026-10-24T12:33:33.676Z",
-    "priceQueriedAt": "2026-10-24T12:33:35.607Z",
+    "queriedAt": "2026-10-24T15:01:57.719Z",
+    "priceQueriedAt": "2026-10-24T15:01:59.562Z",
     "disclaimer": "仅查询和试算；不代表锁价或下单，不承诺全局最低价。"
   },
+  "exportConsistency": [
+    {
+      "person": "匿名 A",
+      "metCount": 1,
+      "missedCount": 0,
+      "wantCount": 1,
+      "consistent": true
+    },
+    {
+      "person": "匿名 B",
+      "metCount": 1,
+      "missedCount": 0,
+      "wantCount": 1,
+      "consistent": true
+    }
+  ],
   "notes": [
     "在当前约束下，部分策略可能得到相同组合；不会为了展示差异强行加餐。",
     "忌口与「不接受」只依据返回的名称和标签匹配，不是配料或过敏原安全保证；严重过敏请向门店确认。",
-    "已排除 4 个需要套餐选配或组合的餐品，避免替用户擅自选配。"
+    "已排除 3 个需要套餐选配或组合的餐品，避免替用户擅自选配。"
   ],
   "policy": "只读；未下单、未支付、未领券、未兑换、未抽奖",
   "events": [
     {
       "tool": "query-nearby-stores",
       "status": "success",
-      "at": "2026-10-24T12:33:33.286Z"
+      "at": "2026-10-24T15:01:57.146Z"
     },
     {
       "tool": "query-meals",
       "status": "success",
-      "at": "2026-10-24T12:33:33.541Z"
+      "at": "2026-10-24T15:01:57.511Z"
     },
     {
       "tool": "query-store-coupons",
       "status": "success",
-      "at": "2026-10-24T12:33:33.674Z"
+      "at": "2026-10-24T15:01:57.717Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:33.820Z"
+      "at": "2026-10-24T15:01:57.862Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:33.914Z"
+      "at": "2026-10-24T15:01:57.964Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.012Z"
+      "at": "2026-10-24T15:01:58.070Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.113Z"
+      "at": "2026-10-24T15:01:58.167Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.209Z"
+      "at": "2026-10-24T15:01:58.270Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.306Z"
+      "at": "2026-10-24T15:01:58.456Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.411Z"
+      "at": "2026-10-24T15:01:58.547Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.511Z"
+      "at": "2026-10-24T15:01:58.648Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.656Z"
+      "at": "2026-10-24T15:01:58.756Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T15:01:58.904Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T15:01:59.044Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T15:01:59.192Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T15:01:59.333Z"
     },
     {
       "tool": "query-meal-detail",
       "status": "success",
-      "at": "2026-10-24T12:33:34.777Z"
+      "at": "2026-10-24T15:01:59.438Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:34.912Z"
+      "at": "2026-10-24T15:01:59.562Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:35.053Z"
+      "at": "2026-10-24T15:01:59.716Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:35.193Z"
+      "at": "2026-10-24T15:01:59.856Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:35.362Z"
-    },
-    {
-      "tool": "query-meal-detail",
-      "status": "success",
-      "at": "2026-10-24T12:33:35.465Z"
+      "at": "2026-10-24T15:01:59.995Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:35.607Z"
+      "at": "2026-10-24T15:02:00.177Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:35.734Z"
+      "at": "2026-10-24T15:02:00.349Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:35.884Z"
+      "at": "2026-10-24T15:02:00.512Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:36.038Z"
+      "at": "2026-10-24T15:02:00.656Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:36.220Z"
+      "at": "2026-10-24T15:02:00.865Z"
     },
     {
       "tool": "calculate-price",
       "status": "success",
-      "at": "2026-10-24T12:33:36.422Z"
-    },
-    {
-      "tool": "calculate-price",
-      "status": "success",
-      "at": "2026-10-24T12:33:36.594Z"
-    },
-    {
-      "tool": "calculate-price",
-      "status": "success",
-      "at": "2026-10-24T12:33:36.733Z"
-    },
-    {
-      "tool": "calculate-price",
-      "status": "success",
-      "at": "2026-10-24T12:33:36.888Z"
-    },
-    {
-      "tool": "calculate-price",
-      "status": "success",
-      "at": "2026-10-24T12:33:37.365Z"
+      "at": "2026-10-24T15:02:01.009Z"
     }
   ]
 }

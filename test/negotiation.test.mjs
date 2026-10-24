@@ -2,6 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createApp } from '../server.mjs';
+import { recommendPlans, compareUpgrade } from '../lib/recommend.mjs';
 
 const text = (data) => ({ content: [{ type: 'text', text: JSON.stringify(data) }] });
 const MENU = {
@@ -162,6 +163,7 @@ test('多 10 元对比：两端都完成官方试算才给出增量、新增餐�
     assert.deepEqual(up.d.added, [{ name: '薯条', quantity: 1 }]);
     assert.equal(up.d.beneficiaries[0].person, '匿名 B');
     assert.deepEqual(up.d.beneficiaries[0].gained, ['薯条']);
+    assert.deepEqual(up.d.beneficiaries[0].added, [{ name: '薯条', quantity: 1 }], '受益项要能说清多拿到了什么');
     // 结果缓存，避免重复请求官方接口
     const again = await req(s, '/api/upgrade', { planHandle: plan.planHandle }, ck);
     assert.deepEqual(again.d, up.d);
@@ -223,4 +225,18 @@ test('导出只含匿名分配与官方价格时间，不含口味原文或商�
     assert.equal(blob.includes('p1'), false);
     assert.equal('planHandle' in ex.d, false);
   } finally { await new Promise((r) => s.close(r)); }
+});
+
+test('加价后只多分到同类餐品、没有新增关键词满足时，也如实列出多拿到的餐品', () => {
+  const menu = [{ id: 'm1', name: '鸡肉汉堡', price: 20, category: '主食' }, { id: 'm2', name: '鸡块', price: 8, category: '小食', tags: ['鸡肉'] }];
+  const base = recommendPlans({ menu, people: [{ wants: '鸡肉', avoids: '' }], budget: 20, keys: ['taste'] }).plans[0];
+  base.priceVerified = true; base.verifiedPrice = 20;
+  const next = recommendPlans({ menu, people: [{ wants: '鸡肉', avoids: '' }], budget: 30, keys: ['taste'] }).plans[0];
+  next.priceVerified = true; next.verifiedPrice = 28;
+  const r = compareUpgrade(base, next, 10);
+  assert.equal(r.comparable, true);
+  assert.equal(r.changed, true);
+  assert.deepEqual(r.beneficiaries[0].gained, [], '口味关键词已经满足，不重复计为新增满足');
+  assert.deepEqual(r.beneficiaries[0].added, [{ name: '鸡块', quantity: 1 }], '多拿到的餐品必须如实列出');
+  assert.equal(r.delta, 8);
 });

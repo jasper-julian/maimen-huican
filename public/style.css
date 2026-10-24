@@ -70,3 +70,13 @@ body.busy{cursor:progress}
 .empty-state b{display:block;margin-bottom:4px;color:#8a5a1a}
 .plan-grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
 @media(max-width:800px){.person-alloc{padding:8px 0 0}.pa-item{flex-wrap:wrap}}
+
+/* 方案卡按钮：两列网格，避免四个按钮挤成多行 */
+.plan-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.plan-actions button{width:100%;white-space:nowrap;font-size:11px;padding:9px 6px}
+
+/* 宽屏比较：四种策略并排，方便一眼对比 */
+@media(min-width:1200px){.plan-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* 价格说明单独一行，避免括号在四列布局里被拆断 */
+.plan .price small{display:block;margin-top:4px}

@@ -68,5 +68,31 @@
 - 「照顾最难满足的人」只对齐当前候选，不是全局最优，也不代表每个人真实满意。
 - 未做现场真人试用记录（brief 中要求在实际同意参与的现场试用中记录选择/修改次数/反馈）——本轮没有真实试用数据，不编造。
 - 浏览器端到端依赖本机 playwright-core 与 Chromium，脚本不随交付包提供依赖。
-- 未录音录屏；使用说明以 README 为准。
+- 第三轮结束时尚未录屏（第四轮已补，见下）。
 - `workbuddy.md` 是开发摘要，不是完整对话导出。
+- 未做现场真人试用记录（无真实参与者数据，不编造）。
+
+## 第四轮：导出统计修复、录屏与交付（本次）
+
+1. **修掉导出的真实错误**：`exportCard()` 原来读 `a.satisfaction.wants.length`，但分配上只有 `met/missed/ratio`，导致「明明满足 1 项却导出需求 0 项」。改为在生成分配时同源写入 `metCount / missedCount / wantCount`，导出只读计数，不依赖被剥离的偏好原文。新增 `test/export.test.mjs` 6 项覆盖 0 项 / 单项 / 多项部分满足 / 否决重排后 / 全量一致性 / 直调 `exportCard`。
+2. **加价受益人补全**：原来只统计“新增满足的关键词”，会出现“新增了餐品但受益人为空”。现在同时列出本人实际多分到的餐品（实测「匿名 A 多拿到 麦乐鸡 ×1」），并加了回归用例。
+3. **失效规则拆成两级**：改预算/人数/口味只清结果，保留菜单与“不接受”记录；换城市/商圈/门店才作废菜单句柄。修掉了“改预算后被否决的餐品又回来”的问题。
+4. **重新核价时清掉加价缓存**，避免用旧金额解释新价格。
+5. **界面**：宽屏四列并排对比、方案卡按钮 2×2、价格说明单独一行；修正残留的“三种方案”文案与页脚版本。
+6. **真实录屏**：写 `test/record-demo.mjs`，用 Playwright 驱动本机真实页面 + `recordVideo` 录制；字幕用 constructed stylesheet 叠加（页面有 CSP，内联样式会被拦），再转 H.264 MP4。`test/make-cover.mjs` 用真实结果页生成 4:3 封面。
+7. **真实对话导出**：写 `test/export-conversation.mjs`，从本机会话 jsonl 只抽用户与助手的文本消息，排除系统提示与工具原始返回，生成 `docs/conversation/workbuddy-conversation-export.md`。
+
+## 第四轮可复核结果
+
+- `npm test`：**31 项全部通过**（离线，不消费外部接口）。
+- 真实只读（2026-10-24 23:02，上海·静安寺）：88 个可用单品、3 个门店优惠；四套方案全部试算成功 ¥86.00 / ¥33.90 / ¥60.00 / ¥86.00；工具调用 27 次全部在白名单内。
+- 否决重排：B 不接受「高达吉士双牛堡」→ ¥86.50 / ¥33.90 / ¥60.50 / ¥86.50，B 不再分到该项。
+- 加价对比：¥120→¥130 无变化；¥55→¥65 口味方案 ¥46.50→¥60.50，新增麦乐鸡 ×1，`delta=14`。
+- 导出核对：两人 1/0/1，与页面逐人一致，金额与时间一致。
+- 浏览器端到端：4 套已验证、重复点击只发 1 次推荐请求、否决回显正确、导出所选方案、切店作废、演示进出、无 console 报错、390px 无横向溢出。
+- 视频：`docs/videos/maimen-huican-demo.mp4`，2:15，1280×720，H.264，3.46 MB，SHA256 `026f8735…a0a12a`。
+- 证据：`outputs/FINAL_TEST_REPORT.md`、`outputs/live-verification.json`、`outputs/browser-verification.json`、`outputs/recording/recording-log.json`。
+
+## 记录范围说明
+
+本文件是**摘要，不是完整对话导出**。真实消息文本流见 `docs/conversation/workbuddy-conversation-export.md`（由 `test/export-conversation.mjs` 从本机会话记录生成，含用户与助手消息，不含系统提示、工具参数与工具原始返回）。完整的会话快照（含工具明细）仍只保存在本机 `~/.workbuddy/projects/Users-gongao-Documents-waytoagi-dining/d0c520ca-afce-442c-b638-d323ae61a945.jsonl`，没有上传。

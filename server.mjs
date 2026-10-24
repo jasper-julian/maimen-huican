@@ -76,7 +76,7 @@ export function createApp({connect=connectMcp,credentialLoader=()=>loadCredentia
   }
   async function verify(plan,menu){
     if(plan.source==='demo'){plan.priceStatus='演示估算 · 未验证价格';plan.priceFailure=null;return plan;}
-    Object.assign(plan,{priceVerified:false,verifiedPrice:null,priceStatus:'未验证价格',priceFailure:null});
+    Object.assign(plan,{priceVerified:false,verifiedPrice:null,priceStatus:'未验证价格',priceFailure:null,upgrade:null});
     try{
       // 再次确认所有推荐单品无需套餐选配；详情来自本次门店会话缓存。
       const prefailed=plan.items.map(x=>menu.detailErrors.get(x.id)).find(Boolean);
