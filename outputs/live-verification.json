@@ -1,0 +1,953 @@
+{
+  "checkedAt": "2026-10-24T12:33:37.415Z",
+  "area": "上海 静安寺",
+  "store": "麦当劳上海静安寺餐厅",
+  "menuCount": 87,
+  "couponCount": 3,
+  "people": 2,
+  "vetoedItem": "高达吉士双牛堡",
+  "plans": [
+    {
+      "title": "优先满足口味",
+      "strategy": "taste",
+      "items": [
+        {
+          "name": "板烧鸡腿堡",
+          "quantity": 1
+        },
+        {
+          "name": "麦乐鸡",
+          "quantity": 1
+        },
+        {
+          "name": "高达吉士双牛堡",
+          "quantity": 1
+        },
+        {
+          "name": "巨无霸",
+          "quantity": 1
+        }
+      ],
+      "allocations": [
+        {
+          "person": "匿名 A",
+          "items": [
+            "板烧鸡腿堡",
+            "麦乐鸡"
+          ],
+          "met": [
+            "鸡肉"
+          ],
+          "missed": [],
+          "ratio": 1
+        },
+        {
+          "person": "匿名 B",
+          "items": [
+            "高达吉士双牛堡",
+            "巨无霸"
+          ],
+          "met": [
+            "牛肉"
+          ],
+          "missed": [],
+          "ratio": 1
+        }
+      ],
+      "menuEstimate": 86,
+      "priceVerified": true,
+      "verifiedPrice": 86,
+      "priceStatus": "官方实付试算 · 未下单",
+      "withinBudget": true,
+      "discount": 0,
+      "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+      "priceQueriedAt": "2026-10-24T12:33:34.913Z",
+      "unmet": [],
+      "failure": null
+    },
+    {
+      "title": "优先节省预算",
+      "strategy": "budget",
+      "items": [
+        {
+          "name": "枫糖风味厚松饼猪柳堡",
+          "quantity": 1
+        },
+        {
+          "name": "龙焰鸡腿堡",
+          "quantity": 1
+        }
+      ],
+      "allocations": [
+        {
+          "person": "匿名 A",
+          "items": [
+            "枫糖风味厚松饼猪柳堡"
+          ],
+          "met": [],
+          "missed": [
+            "鸡肉"
+          ],
+          "ratio": 0
+        },
+        {
+          "person": "匿名 B",
+          "items": [
+            "龙焰鸡腿堡"
+          ],
+          "met": [],
+          "missed": [
+            "牛肉"
+          ],
+          "ratio": 0
+        }
+      ],
+      "menuEstimate": 33.9,
+      "priceVerified": true,
+      "verifiedPrice": 33.9,
+      "priceStatus": "官方实付试算 · 未下单",
+      "withinBudget": true,
+      "discount": 8.1,
+      "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+      "priceQueriedAt": "2026-10-24T12:33:35.054Z",
+      "unmet": [
+        "匿名 A想吃「鸡肉」未满足（预算或菜单限制）",
+        "匿名 B想吃「牛肉」未满足（预算或菜单限制）"
+      ],
+      "failure": null
+    },
+    {
+      "title": "折中推荐",
+      "strategy": "balanced",
+      "items": [
+        {
+          "name": "板烧鸡腿堡",
+          "quantity": 1
+        },
+        {
+          "name": "麦乐鸡",
+          "quantity": 1
+        },
+        {
+          "name": "高达吉士双牛堡",
+          "quantity": 1
+        }
+      ],
+      "allocations": [
+        {
+          "person": "匿名 A",
+          "items": [
+            "板烧鸡腿堡",
+            "麦乐鸡"
+          ],
+          "met": [
+            "鸡肉"
+          ],
+          "missed": [],
+          "ratio": 1
+        },
+        {
+          "person": "匿名 B",
+          "items": [
+            "高达吉士双牛堡"
+          ],
+          "met": [
+            "牛肉"
+          ],
+          "missed": [],
+          "ratio": 1
+        }
+      ],
+      "menuEstimate": 60,
+      "priceVerified": true,
+      "verifiedPrice": 60,
+      "priceStatus": "官方实付试算 · 未下单",
+      "withinBudget": true,
+      "discount": 0,
+      "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+      "priceQueriedAt": "2026-10-24T12:33:35.193Z",
+      "unmet": [],
+      "failure": null
+    },
+    {
+      "title": "照顾最难满足的人",
+      "strategy": "fair",
+      "items": [
+        {
+          "name": "板烧鸡腿堡",
+          "quantity": 1
+        },
+        {
+          "name": "麦乐鸡",
+          "quantity": 1
+        },
+        {
+          "name": "高达吉士双牛堡",
+          "quantity": 1
+        },
+        {
+          "name": "巨无霸",
+          "quantity": 1
+        }
+      ],
+      "allocations": [
+        {
+          "person": "匿名 A",
+          "items": [
+            "板烧鸡腿堡",
+            "麦乐鸡"
+          ],
+          "met": [
+            "鸡肉"
+          ],
+          "missed": [],
+          "ratio": 1
+        },
+        {
+          "person": "匿名 B",
+          "items": [
+            "高达吉士双牛堡",
+            "巨无霸"
+          ],
+          "met": [
+            "牛肉"
+          ],
+          "missed": [],
+          "ratio": 1
+        }
+      ],
+      "menuEstimate": 86,
+      "priceVerified": true,
+      "verifiedPrice": 86,
+      "priceStatus": "官方实付试算 · 未下单",
+      "withinBudget": true,
+      "discount": 0,
+      "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+      "priceQueriedAt": "2026-10-24T12:33:35.362Z",
+      "unmet": [],
+      "failure": null
+    }
+  ],
+  "veto": {
+    "person": "匿名 B",
+    "item": "高达吉士双牛堡",
+    "vetoes": [
+      {
+        "person": "匿名 A",
+        "rejected": []
+      },
+      {
+        "person": "匿名 B",
+        "rejected": [
+          "高达吉士双牛堡"
+        ]
+      }
+    ],
+    "plans": [
+      {
+        "title": "优先满足口味",
+        "strategy": "taste",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "麦乐鸡",
+            "quantity": 1
+          },
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          },
+          {
+            "name": "巨无霸",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "板烧鸡腿堡",
+              "麦乐鸡"
+            ],
+            "met": [
+              "鸡肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "双层吉士汉堡",
+              "巨无霸"
+            ],
+            "met": [
+              "牛肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          }
+        ],
+        "menuEstimate": 86.5,
+        "priceVerified": true,
+        "verifiedPrice": 86.5,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 0,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:35.607Z",
+        "unmet": [],
+        "failure": null
+      },
+      {
+        "title": "优先节省预算",
+        "strategy": "budget",
+        "items": [
+          {
+            "name": "枫糖风味厚松饼猪柳堡",
+            "quantity": 1
+          },
+          {
+            "name": "龙焰鸡腿堡",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "枫糖风味厚松饼猪柳堡"
+            ],
+            "met": [],
+            "missed": [
+              "鸡肉"
+            ],
+            "ratio": 0
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "龙焰鸡腿堡"
+            ],
+            "met": [],
+            "missed": [
+              "牛肉"
+            ],
+            "ratio": 0
+          }
+        ],
+        "menuEstimate": 33.9,
+        "priceVerified": true,
+        "verifiedPrice": 33.9,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 8.1,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:35.734Z",
+        "unmet": [
+          "匿名 A想吃「鸡肉」未满足（预算或菜单限制）",
+          "匿名 B想吃「牛肉」未满足（预算或菜单限制）"
+        ],
+        "failure": null
+      },
+      {
+        "title": "折中推荐",
+        "strategy": "balanced",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "麦乐鸡",
+            "quantity": 1
+          },
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "板烧鸡腿堡",
+              "麦乐鸡"
+            ],
+            "met": [
+              "鸡肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "双层吉士汉堡"
+            ],
+            "met": [
+              "牛肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          }
+        ],
+        "menuEstimate": 60.5,
+        "priceVerified": true,
+        "verifiedPrice": 60.5,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 0,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:35.884Z",
+        "unmet": [],
+        "failure": null
+      },
+      {
+        "title": "照顾最难满足的人",
+        "strategy": "fair",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "麦乐鸡",
+            "quantity": 1
+          },
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          },
+          {
+            "name": "巨无霸",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "板烧鸡腿堡",
+              "麦乐鸡"
+            ],
+            "met": [
+              "鸡肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "双层吉士汉堡",
+              "巨无霸"
+            ],
+            "met": [
+              "牛肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          }
+        ],
+        "menuEstimate": 86.5,
+        "priceVerified": true,
+        "verifiedPrice": 86.5,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 0,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:36.038Z",
+        "unmet": [],
+        "failure": null
+      }
+    ],
+    "conflicts": []
+  },
+  "upgrade": {
+    "comparable": true,
+    "changed": false,
+    "extraBudget": 10,
+    "delta": 0,
+    "added": [],
+    "removed": [],
+    "beneficiaries": [],
+    "note": "预算提高 ¥10 后，当前候选没有产生新的组合，官方实付仍为 ¥60.50。",
+    "planHandle": "919edb1af8a9eefc8b5864568927056e4e4f",
+    "title": "折中推荐",
+    "budget": 130,
+    "priceVerified": true,
+    "verifiedPrice": 60.5,
+    "items": [
+      {
+        "name": "板烧鸡腿堡",
+        "quantity": 1
+      },
+      {
+        "name": "麦乐鸡",
+        "quantity": 1
+      },
+      {
+        "name": "双层吉士汉堡",
+        "quantity": 1
+      }
+    ]
+  },
+  "tightBudget": {
+    "budget": 55,
+    "plans": [
+      {
+        "title": "优先满足口味",
+        "strategy": "taste",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "板烧鸡腿堡"
+            ],
+            "met": [
+              "鸡肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "双层吉士汉堡"
+            ],
+            "met": [
+              "牛肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          }
+        ],
+        "menuEstimate": 46.5,
+        "priceVerified": true,
+        "verifiedPrice": 46.5,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 0,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:36.422Z",
+        "unmet": [],
+        "failure": null
+      },
+      {
+        "title": "优先节省预算",
+        "strategy": "budget",
+        "items": [
+          {
+            "name": "枫糖风味厚松饼猪柳堡",
+            "quantity": 1
+          },
+          {
+            "name": "龙焰鸡腿堡",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "枫糖风味厚松饼猪柳堡"
+            ],
+            "met": [],
+            "missed": [
+              "鸡肉"
+            ],
+            "ratio": 0
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "龙焰鸡腿堡"
+            ],
+            "met": [],
+            "missed": [
+              "牛肉"
+            ],
+            "ratio": 0
+          }
+        ],
+        "menuEstimate": 33.9,
+        "priceVerified": true,
+        "verifiedPrice": 33.9,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 8.1,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:36.594Z",
+        "unmet": [
+          "匿名 A想吃「鸡肉」未满足（预算或菜单限制）",
+          "匿名 B想吃「牛肉」未满足（预算或菜单限制）"
+        ],
+        "failure": null
+      },
+      {
+        "title": "折中推荐",
+        "strategy": "balanced",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "板烧鸡腿堡"
+            ],
+            "met": [
+              "鸡肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "双层吉士汉堡"
+            ],
+            "met": [
+              "牛肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          }
+        ],
+        "menuEstimate": 46.5,
+        "priceVerified": true,
+        "verifiedPrice": 46.5,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 0,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:36.733Z",
+        "unmet": [],
+        "failure": null
+      },
+      {
+        "title": "照顾最难满足的人",
+        "strategy": "fair",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          }
+        ],
+        "allocations": [
+          {
+            "person": "匿名 A",
+            "items": [
+              "板烧鸡腿堡"
+            ],
+            "met": [
+              "鸡肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          },
+          {
+            "person": "匿名 B",
+            "items": [
+              "双层吉士汉堡"
+            ],
+            "met": [
+              "牛肉"
+            ],
+            "missed": [],
+            "ratio": 1
+          }
+        ],
+        "menuEstimate": 46.5,
+        "priceVerified": true,
+        "verifiedPrice": 46.5,
+        "priceStatus": "官方实付试算 · 未下单",
+        "withinBudget": true,
+        "discount": 0,
+        "couponCoverage": "单券试算 0 项，失败 0 项；最多覆盖 3 个匹配优惠，不承诺最低价",
+        "priceQueriedAt": "2026-10-24T12:33:36.888Z",
+        "unmet": [],
+        "failure": null
+      }
+    ],
+    "conflicts": [],
+    "upgrade": {
+      "comparable": true,
+      "changed": true,
+      "extraBudget": 10,
+      "delta": 14,
+      "added": [
+        {
+          "name": "麦乐鸡",
+          "quantity": 1
+        }
+      ],
+      "removed": [],
+      "beneficiaries": [],
+      "note": "多花 ¥14.00 换来上面的变化；仅为当前候选下的比较，不是全局最优。",
+      "planHandle": "bb8c22757f379163170dd3e99570b6f1696c",
+      "title": "优先满足口味",
+      "budget": 65,
+      "priceVerified": true,
+      "verifiedPrice": 60.5,
+      "items": [
+        {
+          "name": "板烧鸡腿堡",
+          "quantity": 1
+        },
+        {
+          "name": "麦乐鸡",
+          "quantity": 1
+        },
+        {
+          "name": "双层吉士汉堡",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "exported": {
+    "product": "麦门会餐",
+    "source": "麦当劳官方 MCP（查询与价格核对）",
+    "store": "麦当劳上海静安寺餐厅",
+    "peopleCount": 2,
+    "diningMode": "堂食",
+    "strategy": "优先满足口味",
+    "items": [
+      {
+        "name": "板烧鸡腿堡",
+        "quantity": 1
+      },
+      {
+        "name": "麦乐鸡",
+        "quantity": 1
+      },
+      {
+        "name": "双层吉士汉堡",
+        "quantity": 1
+      },
+      {
+        "name": "巨无霸",
+        "quantity": 1
+      }
+    ],
+    "allocations": [
+      {
+        "person": "匿名 A",
+        "items": [
+          {
+            "name": "板烧鸡腿堡",
+            "quantity": 1
+          },
+          {
+            "name": "麦乐鸡",
+            "quantity": 1
+          }
+        ],
+        "metCount": 1,
+        "wantCount": 0
+      },
+      {
+        "person": "匿名 B",
+        "items": [
+          {
+            "name": "双层吉士汉堡",
+            "quantity": 1
+          },
+          {
+            "name": "巨无霸",
+            "quantity": 1
+          }
+        ],
+        "metCount": 1,
+        "wantCount": 0
+      }
+    ],
+    "menuEstimate": 86.5,
+    "priceStatus": "官方实付试算 · 未下单",
+    "verifiedPrice": 86.5,
+    "offers": [
+      {
+        "title": "官方当前售价 / 自动适用优惠",
+        "condition": "该门店、到店自取、当前餐品数量；未主动使用卡券",
+        "status": "本次官方试算采用的价格来源"
+      }
+    ],
+    "queriedAt": "2026-10-24T12:33:33.676Z",
+    "priceQueriedAt": "2026-10-24T12:33:35.607Z",
+    "disclaimer": "仅查询和试算；不代表锁价或下单，不承诺全局最低价。"
+  },
+  "notes": [
+    "在当前约束下，部分策略可能得到相同组合；不会为了展示差异强行加餐。",
+    "忌口与「不接受」只依据返回的名称和标签匹配，不是配料或过敏原安全保证；严重过敏请向门店确认。",
+    "已排除 4 个需要套餐选配或组合的餐品，避免替用户擅自选配。"
+  ],
+  "policy": "只读；未下单、未支付、未领券、未兑换、未抽奖",
+  "events": [
+    {
+      "tool": "query-nearby-stores",
+      "status": "success",
+      "at": "2026-10-24T12:33:33.286Z"
+    },
+    {
+      "tool": "query-meals",
+      "status": "success",
+      "at": "2026-10-24T12:33:33.541Z"
+    },
+    {
+      "tool": "query-store-coupons",
+      "status": "success",
+      "at": "2026-10-24T12:33:33.674Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:33.820Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:33.914Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.012Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.113Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.209Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.306Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.411Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.511Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.656Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.777Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:34.912Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.053Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.193Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.362Z"
+    },
+    {
+      "tool": "query-meal-detail",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.465Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.607Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.734Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:35.884Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:36.038Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:36.220Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:36.422Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:36.594Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:36.733Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:36.888Z"
+    },
+    {
+      "tool": "calculate-price",
+      "status": "success",
+      "at": "2026-10-24T12:33:37.365Z"
+    }
+  ]
+}

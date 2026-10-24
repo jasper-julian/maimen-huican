@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-10-24T12:34:09.841Z",
+  "checks": [
+    {
+      "title": "麦门会餐 · 一张卡，大家都能吃"
+    },
+    {
+      "banner": "可以查询真实门店、菜单与优惠；只有官方价格核对成功后，才会标记「已验证价格」。"
+    },
+    {
+      "bannerMentionsLocalConfig": false
+    },
+    {
+      "jargonOnPage": false
+    },
+    {
+      "configDialogOpen": true
+    },
+    {
+      "cfgSource": "已检测到凭据（.local/config.json）"
+    },
+    {
+      "connected": true
+    },
+    {
+      "submitDisabledDuringRun": true
+    },
+    {
+      "recommendRequests": 1
+    },
+    {
+      "plans": 4
+    },
+    {
+      "hasAllocations": 8
+    },
+    {
+      "hasTimes": "菜单查询：10/24 20:34价格核对：10/24 20:34"
+    },
+    {
+      "verifiedPrices": [
+        "¥86.00 官方实付（已核对商品与数量）",
+        "¥33.90 官方实付（已核对商品与数量）",
+        "¥60.00 官方实付（已核对商品与数量）",
+        "¥86.00 官方实付（已核对商品与数量）"
+      ]
+    },
+    {
+      "statuses": [
+        "官方实付试算 · 未下单",
+        "官方实付试算 · 未下单",
+        "官方实付试算 · 未下单",
+        "官方实付试算 · 未下单"
+      ]
+    },
+    {
+      "satisfactionChips": 8
+    },
+    {
+      "vetoEcho": "2 人 · ¥120 总预算 · 堂食 · 官方实时查询 · 门店：麦当劳上海静安寺餐厅 · 匿名 B 不接受：高达吉士双牛堡"
+    },
+    {
+      "plansAfterVeto": 4
+    },
+    {
+      "conflictShown": false
+    },
+    {
+      "upgradeBox": "多 10 元：方案没有变化这是以最低菜单标价为先的方案，多 ¥10 不会自动加餐；可看「优先满足口味」或「折中推荐」的加价对比。官方实付仍为 ¥33.90。"
+    },
+    {
+      "selectedHintBefore": "未选择方案"
+    },
+    {
+      "selectedHintAfter": "已选：优先节省预算"
+    },
+    {
+      "downloadName": "麦门会餐-优先节省预算-脱敏方案卡.json"
+    },
+    {
+      "resultsHiddenAfterStoreChange": true
+    },
+    {
+      "demoMode": "演示模式 · 数据虚构"
+    },
+    {
+      "exitDemoMode": "未选择数据来源"
+    },
+    {
+      "mobileHorizontalOverflowPx": 0
+    },
+    {
+      "pageErrors": []
+    }
+  ]
+}

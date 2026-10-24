@@ -1,0 +1,16 @@
+{
+  "name": "maimen-huican",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "麦门会餐 · 饭局谈判官：多人匿名需求卡、逐人满足说明、否决重排与官方价格核对。",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/unit.test.mjs test/simulated-e2e.test.mjs test/plan-quality.test.mjs test/negotiation.test.mjs",
+    "test:live": "node test/live-check.mjs",
+    "diagnose": "node test/diagnose-price.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
