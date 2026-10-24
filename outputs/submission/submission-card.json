@@ -11,15 +11,7 @@
       "quantity": 1
     },
     {
-      "name": "麦乐鸡",
-      "quantity": 1
-    },
-    {
       "name": "双层吉士汉堡",
-      "quantity": 1
-    },
-    {
-      "name": "巨无霸",
       "quantity": 1
     }
   ],
@@ -29,10 +21,6 @@
       "items": [
         {
           "name": "板烧鸡腿堡",
-          "quantity": 1
-        },
-        {
-          "name": "麦乐鸡",
           "quantity": 1
         }
       ],
@@ -46,10 +34,6 @@
         {
           "name": "双层吉士汉堡",
           "quantity": 1
-        },
-        {
-          "name": "巨无霸",
-          "quantity": 1
         }
       ],
       "metCount": 1,
@@ -57,9 +41,9 @@
       "wantCount": 1
     }
   ],
-  "menuEstimate": 86.5,
+  "menuEstimate": 46.5,
   "priceStatus": "官方实付试算 · 未下单",
-  "verifiedPrice": 86.5,
+  "verifiedPrice": 46.5,
   "offers": [
     {
       "title": "官方当前售价 / 自动适用优惠",
@@ -67,7 +51,7 @@
       "status": "本次官方试算采用的价格来源"
     }
   ],
-  "queriedAt": "2026-10-24T15:01:57.719Z",
-  "priceQueriedAt": "2026-10-24T15:01:59.562Z",
+  "queriedAt": "2026-10-24T15:46:40.467Z",
+  "priceQueriedAt": "2026-10-24T15:47:24.713Z",
   "disclaimer": "仅查询和试算；不代表锁价或下单，不承诺全局最低价。"
 }

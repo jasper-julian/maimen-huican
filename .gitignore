@@ -2,3 +2,8 @@
 .env*
 !.env.example
 node_modules/
+# 录屏原始文件与提交包里的视频副本（仓库只保留 docs/videos 的正式视频）
+outputs/recording/*.webm
+outputs/recording/frames/
+outputs/submission/maimen-huican-demo.mp4
+.workbuddy/

@@ -2,12 +2,20 @@
 
 一群人一起吃麦当劳时，最低总价不一定是大家都接受的答案。这个作品把每个人的需求写成一张**匿名需求卡**，用真实门店菜单生成可比较的方案，展示**每个人拿到了什么、谁的要求被照顾、谁在将就**；任何一个人说「这份我不接受」，就现场重谈一次，再用官方价格核对回答「多 10 元能换来什么」。
 
-- **演示视频（2 分 15 秒，真实 MCP 调用）**：[maimen-huican-demo.mp4](docs/videos/maimen-huican-demo.mp4) · [参数与 SHA256](docs/videos/README.md)
+- **演示视频（2 分 28 秒，真实 MCP 调用）**：[maimen-huican-demo.mp4](docs/videos/maimen-huican-demo.mp4) · [参数与 SHA256](docs/videos/README.md)
+- **界面**：0.5.0 起为明亮的红黄主题（红 `#DA291C`、金黄 `#FFC72C`、暖白 `#FFF9ED`）。这只是借用“红黄、有食欲”的观感作为设计起点，**不是**麦当劳官方品牌规范，本作品也不是官方出品。
 - **仓库**：<https://github.com/jasper-julian/maimen-huican>
 - 页面只出现用户能决定的业务信息，不出现接口名、schema 等开发术语。
 - 只查询与试算：不下单、不支付、不领券、不兑换积分、不抽奖、不读收货地址。
 - 官方场景固定「到店自取」；「堂食/外带」只是用餐说明，不冒充新的官方业务能力。
 - **没有公网在线演示**：这是本机应用（`127.0.0.1`），GitHub 仓库不是可交互的在线地址。评委体验请按下面的启动步骤在本地运行，或看演示视频。
+
+## 界面（0.5.0）
+
+- 主界面以暖白留白和白卡片为主，红黄只用在识别与操作重点：顶栏红黄条、红色主按钮、黄色重点标签、选中态的红色边框与文字标记。
+- 状态色保留语义：连接成功是绿、警告是琥珀、否决是红色描边；成功/失败不会只靠颜色区分，都配有文字。
+- 关键文字与背景的实测对比度（`test/browser-check.mjs` 从渲染结果计算）：正文 14.87、主按钮 4.87、重点标签 7.70、标题强调 4.64、连接成功横幅 7.11，全部 ≥ 4.5；22px 粗体角标 M 为 3.12（大字号阈值 3.0）。
+- 截图（同一份真实方案结果）：[首页](outputs/screenshots/desktop-01-home.png) · [四种方案](outputs/screenshots/desktop-02-plans.png) · [逐人分配](outputs/screenshots/desktop-03-plans-detail.png) · [手机首页](outputs/screenshots/mobile-01-home.png) · [手机方案卡](outputs/screenshots/mobile-03-plans.png)
 
 ## 启动
 
@@ -42,7 +50,11 @@ Node.js 22+，无第三方运行依赖。服务只绑定回环地址，拒绝跨
 6. 「多 10 元能换来什么」→ 同一门店、同一策略、预算上限 +10 的相邻候选，两端都完成官方价格核对后才给出实际差额、新增/替换餐品、真实受益的人（没有变化就写没有变化）。
 7. 选择一张方案卡后「导出所选方案卡」，得到不含口味原文、身份、Token、券码的脱敏 JSON。
 
-## 真实验证（2026-10-24 23:02，上海 · 静安寺，只读）
+## 真实验证
+
+后端推荐与官方接口本轮**没有改动**，因此 23:02 的只读验证仍然对应同一份服务端逻辑；0.5.0 改的是界面、录制与封面脚本，新的真实结果来自 23:45 的录屏与 23:50 的浏览器验收。
+
+### 服务端只读验证（2026-10-24 23:02，上海 · 静安寺）
 
 门店「麦当劳上海静安寺餐厅」，88 个可用单品、3 个门店优惠；2 人（A 想吃鸡肉/不吃辣，B 想吃牛肉/不吃鱼），预算 ¥120：
 
@@ -59,7 +71,18 @@ Node.js 22+，无第三方运行依赖。服务只绑定回环地址，拒绝跨
 - **多 10 元对比（预算宽松）**：¥120 → ¥130，折中方案没有产生新组合，页面如实显示「方案没有变化」，官方实付仍为 ¥60.50。
 - **多 10 元对比（预算收紧）**：¥55 → ¥65，口味方案官方实付从 ¥46.50 变为 ¥60.50，新增麦乐鸡 ×1，`delta = 14.00`，受益人是「匿名 A 多拿到 麦乐鸡 ×1」。增量大于 10 元是因为跨过了加餐门槛，页面写的是实际差额。
 - **导出核对**：`metCount / missedCount / wantCount` 与页面逐人一致（A 1/0/1，B 1/0/1），官方金额与核对时间一致。
-- 证据：[`outputs/live-verification.json`](outputs/live-verification.json)、[`outputs/真实验证-脱敏方案卡.json`](outputs/真实验证-脱敏方案卡.json)、[`outputs/browser-verification.json`](outputs/browser-verification.json)、[`outputs/FINAL_TEST_REPORT.md`](outputs/FINAL_TEST_REPORT.md)。
+- 证据：[`outputs/live-verification.json`](outputs/live-verification.json)、[`outputs/真实验证-脱敏方案卡.json`](outputs/真实验证-脱敏方案卡.json)。
+
+### 新版界面与录屏的真实结果（2026-10-24 23:45—23:52）
+
+同一门店、同样两人、同样预算，0.5.0 界面重跑了一遍真实链路（录屏即是这一遍）：
+
+- 门店 5 家可选 → 选「麦当劳上海静安寺餐厅」；四套方案官方实付 ¥86.00 / ¥33.90 / ¥60.00 / ¥86.00。
+- 否决：匿名 B 拒绝「高达吉士双牛堡 × 1」→ 重排并重核价，视频里能看到 B 换成了「双层吉士汉堡 × 1」。
+- 预算收紧到 ¥55 → 口味方案官方实付 ¥46.50；「多 10 元」得到 **多花 ¥14.00、新增麦乐鸡 ×1、受益人为匿名 A**（两端都核过价，视频里是当次真实返回）。
+- 导出「优先满足口味」：A 板烧鸡腿堡、B 双层吉士汉堡，两人 `1/0/1`，官方实付 ¥46.50，核对时间与页面一致。
+- 浏览器验收：4 张方案卡、8 块逐人分配、重复点击只发 1 次推荐请求、390px 横向溢出 0px、控制台 0 条错误，主题对比度全部达标。
+- 证据：[`outputs/browser-verification.json`](outputs/browser-verification.json)、[`outputs/recording/recording-log.json`](outputs/recording/recording-log.json)、[`outputs/submission/submission-card.json`](outputs/submission/submission-card.json)、[`outputs/FINAL_TEST_REPORT.md`](outputs/FINAL_TEST_REPORT.md)。
 
 ### 关于此前的“两套价格未验证”
 
@@ -75,15 +98,17 @@ npm run diagnose   # 只读诊断某次试算失败在哪个阶段，只输出�
 
 覆盖：忌口与「不接受」始终是硬约束、否决后的重分配、无解冲突、无偏好者按中性处理、同等满足时比价格、加价对比（变化 / 无变化 / 试算失败）、导出计数一致性（0 项 / 单项 / 多项部分满足 / 否决后）、商品与数量核对、分/元换算、伪造句柄与跨会话访问、句柄有效期、前端伪造菜单与试算参数、工具白名单、上游原文不泄露、未配置时不自动给演示、演示不能标记已验证价格。
 
-本轮结果：31 项全部通过；详见 [`outputs/FINAL_TEST_REPORT.md`](outputs/FINAL_TEST_REPORT.md)。
+本轮结果：31 项全部通过（2026-10-24 23:52 复跑，界面换肤没有触碰推荐与官方接口逻辑）；详见 [`outputs/FINAL_TEST_REPORT.md`](outputs/FINAL_TEST_REPORT.md)。
 
 浏览器端到端与录屏（开发机，需要本机 `playwright-core` + Chromium）：
 
 ```bash
-PLAYWRIGHT_CORE=/path/to/playwright-core/index.js node test/browser-check.mjs
-node test/record-demo.mjs          # 重新录一条真实演示（约 2 分半）
-node test/make-cover.mjs           # 重新生成 4:3 封面
+PLAYWRIGHT_CORE=/path/to/playwright-core/index.js node test/browser-check.mjs  # 交互 + 主题对比度 + 390px + 截图
+PLAYWRIGHT_CORE=/path/to/playwright-core/index.js npm run record               # 重新录一条真实演示（约 2 分半）
+PLAYWRIGHT_CORE=/path/to/playwright-core/index.js npm run cover                # 重新生成 4:3 封面
 ```
+
+录屏脚本用同源真实导航渲染片头/片尾/导出卡（早期版本直接 `setContent` 写空白页，录像只绘制左上角一块并露出灰底），抽帧检查开头/中间/结尾的灰边占比为 0%。
 
 ## 接口（本机）
 
@@ -125,4 +150,6 @@ node test/make-cover.mjs           # 重新生成 4:3 封面
 ## 提交材料
 
 - 提交包清单与可直接粘贴的作品说明：[`SUBMISSION_READY.md`](SUBMISSION_READY.md)
-- 封面（1600×1200）：[`outputs/submission/cover-1600x1200.png`](outputs/submission/cover-1600x1200.png)
+- 封面（1600×1200，4:3，新版红黄）：[`outputs/submission/cover-1600x1200.png`](outputs/submission/cover-1600x1200.png)
+- 主视频：`docs/videos/maimen-huican-demo.mp4`（提交包内 `outputs/submission/maimen-huican-demo.mp4` 与之 SHA256 一致）
+- 界面截图：[`outputs/screenshots/`](outputs/screenshots/)

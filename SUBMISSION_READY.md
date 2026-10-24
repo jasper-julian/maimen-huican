@@ -7,8 +7,9 @@
 - **作品名**：麦门会餐 · 饭局谈判官
 - **一句话**：几个人一起吃麦当劳，先谈清谁被照顾、谁在将就，再让官方价格说话。
 - **仓库**：<https://github.com/jasper-julian/maimen-huican>
-- **主视频**：<https://github.com/jasper-julian/maimen-huican/blob/main/docs/videos/maimen-huican-demo.mp4>（2 分 15 秒，1280×720，真实 MCP 调用）
-- **封面**：`outputs/submission/cover-1600x1200.png`（1600×1200，4:3，312 KB）
+- **主视频**：<https://github.com/jasper-julian/maimen-huican/blob/main/docs/videos/maimen-huican-demo.mp4>（2 分 28 秒，1280×720，H.264，真实 MCP 调用，红黄主题）
+- **封面**：`outputs/submission/cover-1600x1200.png`（1600×1200，4:3，322 KB，新版红黄）
+- **界面截图**：`outputs/screenshots/`（桌面 1280×900、手机 390×844@2x）
 - **在线体验**：无。本机应用，请按使用步骤运行；不要填 localhost 当评委体验网址。
 
 ## 2. 作品说明（可直接粘贴，约 300 字）
@@ -38,19 +39,33 @@ npm test           # 31 项离线测试，不消费外部接口
 ## 4. 真实开发记录
 
 - `workbuddy.md`：**摘要**，不是完整对话。
-- `docs/conversation/workbuddy-conversation-export.md`：从本机 WorkBuddy 会话记录导出的真实消息文本流（导出时共 70 条：用户 35 条 / 助手 35 条），已排除系统提示、运行环境注入块与工具原始返回；由 `test/export-conversation.mjs` 生成，可复现。
+- `docs/conversation/workbuddy-conversation-export.md`：从本机 WorkBuddy 会话记录导出的真实消息文本流（导出时共 80 条：用户 38 条 / 助手 42 条），已排除系统提示、运行环境注入块与工具原始返回；由 `test/export-conversation.mjs` 生成，可复现。
+- 0.5.0 这一轮（红黄主题、重录、重做封面、更新仓库）的对话已追加到同一导出文件，消息数与导出时间以文件头为准。
 - 会话 ID 与文件位置在导出文件的头部；本机路径 `~/.workbuddy/projects/Users-gongao-Documents-waytoagi-dining/d0c520ca-afce-442c-b638-d323ae61a945.jsonl`。
 
 ## 5. 真实调用与测试材料
 
 | 材料 | 路径 |
 | --- | --- |
-| 最终测试报告 | `outputs/FINAL_TEST_REPORT.md` |
-| 真实只读验证（含工具调用次数） | `outputs/live-verification.json` |
-| 真实导出卡 | `outputs/真实验证-脱敏方案卡.json` |
-| 浏览器端到端结果 | `outputs/browser-verification.json` |
+| 最终测试报告（0.5.0，含本轮所有实测数值） | `outputs/FINAL_TEST_REPORT.md` |
+| 真实只读验证（2026-10-24 23:02，后端未改动） | `outputs/live-verification.json` |
+| 0.5.0 真实导出卡（23:47） | `outputs/submission/submission-card.json`、`outputs/recording/export-card.json` |
+| 桌面浏览器验收（交互 + 主题对比度 + 截图） | `outputs/browser-verification.json` |
+| 手机浏览器验收（390×844@2x） | `outputs/mobile-verification.json` |
 | 录屏参数与 SHA256 | `docs/videos/README.md`、`outputs/recording/recording-log.json` |
 | 封面 | `outputs/submission/cover-1600x1200.png` |
+| 界面截图 | `outputs/screenshots/`（desktop-01/02/03、mobile-01/02/03） |
+
+### 0.5.0 更新（本次上传）
+
+| 项目 | 值 |
+| --- | --- |
+| 主题 | 红 `#DA291C`、深红 `#B51D15`、金黄 `#FFC72C`、暖白 `#FFF9ED`；只借用观感，不是官方品牌规范 |
+| 离线测试 | 31 项通过（2026-10-24 23:53:44） |
+| 主视频 | 2 分 28 秒（148.52s），1280×720，H.264 High，4,425,757 字节 |
+| 视频 SHA256 | `65932b7b52ffa1553368a10d1eea38725077469d2e6de11e5eab711495299347` |
+| 封面 | 1600×1200，329,592 字节 |
+| 视频里的真实结果 | ¥86.00 / ¥33.90 / ¥60.00 / ¥86.00；B 否决「高达吉士双牛堡」；¥55 下多花 ¥14.00 得麦乐鸡 ×1；导出「优先满足口味」¥46.50 |
 
 ## 6. 能力边界（提交时不要扩大描述）
 

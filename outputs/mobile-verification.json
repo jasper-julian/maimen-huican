@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-24T15:53:29.947Z",
+  "viewport": "390x844@2x",
+  "checks": [
+    {
+      "overflowHomePx": 0
+    },
+    {
+      "headerFits": true
+    },
+    {
+      "connected": true
+    },
+    {
+      "focusStyle": {
+        "border": "rgb(218, 41, 28)",
+        "hasRing": true
+      }
+    },
+    {
+      "overflowFormPx": 0
+    },
+    {
+      "submitButtonsSameRow": true
+    },
+    {
+      "plans": 4
+    },
+    {
+      "prices": [
+        "¥86.00 官方实付（已核对商品与数量）",
+        "¥33.90 官方实付（已核对商品与数量）",
+        "¥60.00 官方实付（已核对商品与数量）",
+        "¥86.00 官方实付（已核对商品与数量）"
+      ]
+    },
+    {
+      "overflowResultsPx": 0
+    },
+    {
+      "cardFits": true
+    },
+    {
+      "planActionsTwoPerRow": true
+    },
+    {
+      "vetoReadable": {
+        "fontSize": "11px",
+        "whiteSpace": "nowrap",
+        "visible": true
+      }
+    },
+    {
+      "dialogFits": true
+    },
+    {
+      "pageErrors": []
+    }
+  ]
+}

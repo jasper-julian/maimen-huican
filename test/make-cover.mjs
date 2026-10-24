@@ -47,17 +47,17 @@ try {
   });
   await page.waitForTimeout(900);
 
-  // 封面加一条标题带（constructed stylesheet，页面有 CSP）
+  // 封面加一条标题带（constructed stylesheet，页面有 CSP）；红黄与片头、页头一致
   await page.evaluate(() => {
     const sheet = new CSSStyleSheet();
     sheet.replaceSync(`
       #__cover{position:fixed;left:0;right:0;top:0;z-index:2147483000;padding:30px 48px 28px;
-        background:#0a1c14;border-bottom:2px solid #1d3a29;
-        color:#f6fbf4;font-family:"PingFang SC","Hiragino Sans GB",system-ui,sans-serif;pointer-events:none}
-      #__cover .t{font-size:50px;font-weight:800;letter-spacing:-.01em;line-height:1.15}
-      #__cover .s{font-size:21px;color:#b9d3b6;margin-top:12px;line-height:1.6}
+        background:#DA291C;border-bottom:6px solid #FFC72C;
+        color:#FFFFFF;font-family:"PingFang SC","Hiragino Sans GB",system-ui,sans-serif;pointer-events:none}
+      #__cover .t{font-size:52px;font-weight:800;letter-spacing:-.01em;line-height:1.15}
+      #__cover .s{font-size:21px;color:#FFEFD6;margin-top:12px;line-height:1.6}
       #__cover .b{display:inline-block;margin-top:18px;padding:7px 14px;border-radius:999px;
-        background:#a9d977;color:#12321f;font-weight:700;font-size:16px}
+        background:#FFC72C;color:#4A3200;font-weight:700;font-size:16px}
     `);
     document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
     const el = document.createElement('div');

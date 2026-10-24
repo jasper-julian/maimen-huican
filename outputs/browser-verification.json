@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-24T15:02:26.389Z",
+  "checkedAt": "2026-10-24T15:50:33.111Z",
   "checks": [
     {
       "title": "麦门会餐 · 一张卡，大家都能吃"
@@ -35,7 +35,7 @@
       "hasAllocations": 8
     },
     {
-      "hasTimes": "菜单查询：10/24 23:02价格核对：10/24 23:02"
+      "hasTimes": "菜单查询：10/24 23:50价格核对：10/24 23:50"
     },
     {
       "verifiedPrices": [
@@ -55,6 +55,56 @@
     },
     {
       "satisfactionChips": 8
+    },
+    {
+      "themeTokens": {
+        "red": "#DA291C",
+        "deep": "#B51D15",
+        "yellow": "#FFC72C",
+        "paper": "#FFF9ED",
+        "ink": "#27231F"
+      }
+    },
+    {
+      "contrastRatios": {
+        "bodyOnPaper": 14.87,
+        "primaryButton": 4.87,
+        "planTag": 7.7,
+        "heroEmphasis": 4.64,
+        "noticeOk": 7.11,
+        "satisfiedChip": 6.81,
+        "missedChip": 5.86,
+        "footer": 4.96
+      }
+    },
+    {
+      "contrastLargeTextRatios": {
+        "markM": 3.12
+      }
+    },
+    {
+      "contrastNormalAllAtLeast4_5": true
+    },
+    {
+      "contrastLargeTextAllAtLeast3": true
+    },
+    {
+      "contrastMinNormal": 4.64
+    },
+    {
+      "primaryIsMcRed": true
+    },
+    {
+      "featuredUsesRedBorder": true
+    },
+    {
+      "mobileResultsOverflowPx": 0
+    },
+    {
+      "mobileCardFits": true
+    },
+    {
+      "mobileVetoVisible": true
     },
     {
       "vetoEcho": "2 人 · ¥120 总预算 · 堂食 · 官方实时查询 · 门店：麦当劳上海静安寺餐厅 · 匿名 B 不接受：高达吉士双牛堡"
@@ -87,7 +137,22 @@
       "exitDemoMode": "未选择数据来源"
     },
     {
-      "mobileHorizontalOverflowPx": 0
+      "mobileHomeOverflowPx": 0
+    },
+    {
+      "mobileFormOverflowPx": 0
+    },
+    {
+      "mobileButtonsPerRow": {
+        "sameRow": true,
+        "fits": true
+      }
+    },
+    {
+      "mobileFocusVisible": {
+        "border": "rgb(218, 41, 28)",
+        "shadow": true
+      }
     },
     {
       "pageErrors": []
