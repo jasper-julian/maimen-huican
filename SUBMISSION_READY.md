@@ -8,7 +8,7 @@
 - **一句话**：几个人一起吃麦当劳，先谈清谁被照顾、谁在将就，再让官方价格说话。
 - **仓库**：<https://github.com/jasper-julian/maimen-huican>
 - **主视频**：<https://github.com/jasper-julian/maimen-huican/blob/main/docs/videos/maimen-huican-demo.mp4>（2 分 15 秒，1280×720，真实 MCP 调用）
-- **封面**：`outputs/submission/cover-1600x1200.png`（1600×1200，4:3，345 KB）
+- **封面**：`outputs/submission/cover-1600x1200.png`（1600×1200，4:3，312 KB）
 - **在线体验**：无。本机应用，请按使用步骤运行；不要填 localhost 当评委体验网址。
 
 ## 2. 作品说明（可直接粘贴，约 300 字）
